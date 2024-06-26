@@ -1,0 +1,94 @@
+/*Slider*/
+.sliderImg{
+    width: 600px;
+    height: 337px;
+}
+.slider{
+    border: 1px solid var(--acento);
+    
+    margin-bottom: 10%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  
+}
+
+.slider .slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200*14);
+}   
+
+.slider .slide{
+    width: 100%;
+
+}
+
+.sldier .slide img{
+    width: 100%;
+}
+
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-400px * 7));
+    }
+}
+
+    /*Sobre Nosotros*/
+
+.caja1{
+    display:flex ;
+    justify-content: space-around;
+}
+.img1 img{
+    width: 600px;
+    height: 350px;
+}
+/* Ubicación */
+.caja2{
+    display:flex;
+    justify-content: space-around;
+
+}
+
+/* Normas Higiene */
+
+.caja3{
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+.caja4{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ubicacionF{
+    margin-left: -5%;
+    margin-top: 100px;
+}
+.contactoF{
+    margin-left: -14%;
+
+    margin-top: 100px;
+
+}
+.logo img{
+    margin-top: 100px;
+
+    width: 150px;
+    height: 150px;
+}
