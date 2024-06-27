@@ -187,22 +187,66 @@ header label {
 }
 
 /* Ubicación */
-.caja2{
-    display:flex;
-    justify-content: space-around;
+#ubi {
+    background-color: #fff;
+    padding: 50px 0;
+}
 
+#ubi .caja2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#ubi .caja2 h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#ubi .caja2 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#ubi .ubicacion iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
 }
 
 /* Normas Higiene */
 
-.caja3{
+#normas {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+#normas .caja3 {
     text-align: center;
+}
+
+#normas .caja3 h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#normas .caja3 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#normas .caja3 p:first-child {
+    margin-top: 20px;
 }
 
 /* Footer */
 
 footer{
-
     background-color: rgb(43, 43, 207);
     color: white;
     text-align: center;
@@ -210,21 +254,31 @@ footer{
 .caja4{
     display: flex;
     justify-content: space-around;
+    padding: 20px;
 }
 
-.ubicacionF{
+/* .ubicacionF{
     margin-left: -5%;
-    margin-top: 100px;
-}
+    margin-top: 10px;
+}*/
 .contactoF{
-    margin-left: -14%;
-
-    margin-top: 100px;
-
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.contactoF span{
+    padding-left: 5px;
+}
+.icon{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+footer h2{
+    font-size: 2em;
+    padding-bottom: 10px;
 }
 .logo img{
-    margin-top: 100px;
-
+    /* margin-top: 100px; */
     width: 150px;
     height: 150px;
-}
+} 
