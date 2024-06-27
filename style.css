@@ -9,6 +9,8 @@ html{
 
 header {
     background-color: #E32929;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .menu {
@@ -63,6 +65,9 @@ header {
 }
 
 #btn-menu{
+    display: none; 
+}
+header label {
     display: none;
 }
 @media (max-width:768px) {
@@ -104,7 +109,6 @@ header {
         display: none;
     }
 } 
-
 /*Slider*/
 .sliderImg{
     width: 600px;
@@ -113,7 +117,7 @@ header {
 .slider{
     border: 1px solid var(--acento);
     
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -147,7 +151,7 @@ header {
     }
 }
 
-    /*Sobre Nosotros*/
+/*Sobre Nosotros*/
 #sobre {
     background-color: #f5f5f5;
     padding: 50px 0;
