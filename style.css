@@ -315,6 +315,8 @@ img{
     view-timeline-axis: block;
     animation-timeline: --image;
     animation-name: show;
+    animation-range: entry 35% cover 50%;
+    animation-fill-mode: both;
 }
 iframe{
     view-timeline-name: --image;
@@ -322,4 +324,6 @@ iframe{
     animation-timeline: --image;
     animation-name: show;
     opacity: 1 !important;
+    animation-range: entry 35% cover 50%;
+    animation-fill-mode: both
 }
