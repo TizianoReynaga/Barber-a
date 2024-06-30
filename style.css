@@ -61,7 +61,7 @@ header {
     margin-right: 10px;
 }
 .menu li img:hover {
-    opacity: 0.7; 
+    opacity: 0.7 !important; 
 }
 
 #btn-menu{
@@ -76,7 +76,7 @@ header label {
     }
     header label{
         display: block;
-        border-right: 1px solid #ADADAD;
+        border-right: 1px solid #E32929;
     }
     header label {
         display: flex;
@@ -96,14 +96,14 @@ header label {
     .menu ul{
         flex-direction: column;
     }
-    .menu li{
+    /* .menu li{
         border-top: 1px solid #fff;
-    }
+    } */
     #btn-menu:checked ~ .menu{
         margin: 0;
     } 
     .menu {
-        background-color: gray;
+        background-color: #E32929;
     }    
     .menu ul li img{
         display: none;
@@ -260,7 +260,7 @@ header label {
 /* Footer */
 
 footer{
-    background-color: rgb(43, 43, 207);
+    background-color: #E32929;
     color: white;
     text-align: center;
 }
@@ -269,11 +269,6 @@ footer{
     justify-content: space-around;
     padding: 20px;
 }
-
-/* .ubicacionF{
-    margin-left: -5%;
-    margin-top: 10px;
-}*/
 .contactoF{
     display: flex;
     flex-direction: column;
