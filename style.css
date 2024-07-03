@@ -341,16 +341,41 @@ iframe{
         width: 150px;
         height: 150px;
     }
+  
     .slider{
-        margin-top: 50px;
+
+        margin-bottom: 10%;
         width: 100%;
+        height: auto;
+        overflow: hidden;
+      
     }
     .sliderImg{
-        width: auto;
-        height: 250px;
-        opacity: 2 !important;
-        scale: 100% !important;
+        width: 350px;
+        height: 100%;
+        scale: 100%;
     }
+
+    
+    .slider .slide-track{
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(100*10);
+    }   
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-2400px); /* Ajusta según el ancho total necesario */
+        }
+    }
+    
+
+    
+
+
     .caja1{
         text-align: center;
         width: auto;
