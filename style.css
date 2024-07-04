@@ -96,9 +96,6 @@ header label {
     .menu ul{
         flex-direction: column;
     }
-    /* .menu li{
-        border-top: 1px solid #fff;
-    } */
     #btn-menu:checked ~ .menu{
         margin: 0;
     } 
@@ -112,6 +109,7 @@ header label {
 .logomb{
     display: none;
 }
+
 /*Slider*/
 .sliderImg{
     width: 600px;
@@ -122,11 +120,10 @@ header label {
 .slider{
     border: 1px solid var(--acento);
     
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     width: 100%;
     height: auto;
     overflow: hidden;
-  
 }
 
 .slider .slide-track{
@@ -138,7 +135,6 @@ header label {
 
 .slider .slide{
     width: 100%;
-
 }
 
 .sldier .slide img{
@@ -182,7 +178,7 @@ header label {
 
 #sobre .img1 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #sobre .img1 img {
@@ -196,7 +192,9 @@ header label {
     background-color: #fff;
     padding: 50px 0;
 }
-
+#titOcul{
+    display: none;
+}
 #ubi .caja2 {
     display: flex;
     justify-content: space-around;
@@ -223,7 +221,7 @@ header label {
     border-radius: 10px;
 }
 
-/* Normas Higiene */
+/* Calidad de Servicio */
 
 #normas {
     background-color: #f5f5f5;
@@ -258,6 +256,9 @@ header label {
 .caja3 span{
     font-family: defaut;
     padding-left: 10px;
+}
+.imgNormas img{
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -344,8 +345,7 @@ iframe{
     }
   
     .slider{
-
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         width: 100%;
         height: auto;
         overflow: hidden;
@@ -356,7 +356,6 @@ iframe{
         height: 100%;
         scale: 100%;
     }
-
     
     .slider .slide-track{
         display: flex;
@@ -369,14 +368,15 @@ iframe{
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-2400px); /* Ajusta según el ancho total necesario */
+            transform: translateX(-2400px);
         }
     }
     
     .caja1{
         text-align: center;
         width: auto;
-        padding: 25px;
+        padding-right: 25px;
+        padding-left: 25px;
     }
 
     #sobre .img1 img {
@@ -389,14 +389,25 @@ iframe{
         height: 180px;
         text-align: center;
     }
+    
     .caja2{
-        padding: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     #ubi .caja2 h3 {
         font-size: 1.5em;
-        margin-bottom: 20px;
     }
-    
+    .ubicacion{
+        margin-top: 15px;
+    }
+    #titOcul{
+        text-align: center;
+        display: block;
+    }
+    .caja2 .ubicacion h3{
+        display: none;
+    }
+
     #ubi .caja2 p {
         font-size: 1em;
         line-height: 1.6;
@@ -404,14 +415,17 @@ iframe{
     }
     
     .caja3{
-        padding: 25px;
+        padding-left:25px ;
+        padding-right: 25px;
         display: block;
     }
 
     #normas h3 {
         font-size: 1.3em;
         text-align: center;
-        margin-bottom: 40px;
+    }
+    .imgNormas{
+        margin-top: 20px;
     }
     
     #normas .caja3 p {
@@ -448,5 +462,4 @@ iframe{
         width: 100px;
         height: 100px;
     }
-
-  }
+}
